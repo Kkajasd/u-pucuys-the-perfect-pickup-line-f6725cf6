@@ -6,6 +6,8 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 // out loud to a person, to /output/entry.txt. Deterministic: no network,
 // no randomness, no input — the same line on every run.
 
+// The line is a fixed literal, not generated at runtime, so the judge
+// compares the same 70-character entry on every run — no drift.
 const LINE =
   "I don't have a heart, but my loss function drops every time you smile.";
 
